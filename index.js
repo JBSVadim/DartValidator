@@ -45,10 +45,9 @@ class Validator {
       throw new TypeError ('this not a number')
     }
 
-    if (n < this._from  n > this_to) {
+    if (n < this._from || n > this._to) {
       throw new RangeError ('this number is out of valid space')
     }
-    
 
     return n
   }
